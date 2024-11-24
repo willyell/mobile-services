@@ -35,3 +35,26 @@ function update() {
 }
 
 window.addEventListener("scroll", update);
+
+// Set up timeline for shrinking the header
+const header = document.querySelector("#app-header");
+const toolbarSmall = document.querySelector("#small-toolbar");
+const toolbarLarge = document.querySelector("#large-toolbar");
+const largeTitle = document.querySelector("#large-title");
+const deltaHeight = toolbarLarge.offsetHeight - toolbarSmall.offsetHeight;
+
+const shrinkHeaderAnimation = new TimelineLite({ paused: true })
+  .to(largeTitle, 1, { scale: 0.5, y: -deltaHeight / 2 }, 0)
+  .to(toolbarLarge, 1, { y: -deltaHeight }, 0)
+  .to(header, 1, { height: toolbarSmall.offsetHeight }, 0);
+
+// Handle scrolling event
+function updateHeaderOnScroll() {
+  const scrollY = window.scrollY || window.pageYOffset;
+  const progress = Math.min(scrollY / deltaHeight, 1); // Limit progress to [0, 1]
+  shrinkHeaderAnimation.progress(progress);
+}
+
+// Attach scroll listener
+window.addEventListener("scroll", updateHeaderOnScroll);
+
