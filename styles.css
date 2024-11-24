@@ -1,127 +1,103 @@
-/* Base Styling */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-/* Header Styling */
-.app-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 300px;
-  color: white;
-  z-index: 10;
-  background: #3f51b5;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+header {
+    background-color: #00db00;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.background-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+    color: #00db00;
 }
 
-#background-back {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/mountain-02.jpg');
+p {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
 }
 
-#background-front {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/mountain-01.jpg');
-}
-
-/* Banner Section */
-#banners {
-  margin-top: 320px; /* Ensure banners appear below header */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.banner {
-  background: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.banner h2 {
-  margin: 0 0 10px;
-}
-
-.banner p {
-  color: #555;
-}
-
-/* Footer Styling */
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #3f51b5;
-  color: white;
-}
-/* Header Styling */
-.app-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 300px; /* Default height */
-  overflow: hidden;
-  z-index: 10;
-  transition: height 0.3s ease; /* Smooth height transition */
-  background-color: #3f51b5;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-.app-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+footer a {
+    color: #00db00;
+    text-decoration: none;
 }
 
-#small-toolbar {
-  height: 64px; /* Height when header is shrunk */
+footer a:hover {
+    text-decoration: underline;
 }
 
-#large-toolbar {
-  height: 240px; /* Initial height of the large toolbar */
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+/* Banner Container */
+.banner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.large-title {
-  font-size: 2.5rem;
-  color: white;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+/* Banner Styling */
+.banner {
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%; /* Maintain 4:5 Aspect Ratio */
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
 }
 
-.small-title {
-  font-size: 1.5rem;
-  color: white;
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the entire image fits */
 }
 
-/* Transitioning background for visual effect */
-.background-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
+/* Adjusted Spacing */
+.banner-text {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 5px; /* Reduce the space between title and banner */
+    font-weight: bold;
+}
+
+/* Mobile responsiveness (media queries) */
+@media screen and (max-width: 768px) {
+    /* Change grid layout to one column on mobile */
+    .banner-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Adjust banner size to fit single column layout */
+    .banner {
+        padding-bottom: 125%; /* Maintain the aspect ratio for mobile */
+    }
 }
