@@ -10,6 +10,7 @@ body {
 header {
     background-color: #00db00;
     color: white;
+    position: fixed;
     text-align: center;
     padding: 20px;
     transition: all 0.3s ease-in-out; /* Smooth transition for shrinking */
