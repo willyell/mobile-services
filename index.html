@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover top mobile services tailored for entertainment on the go. Subscribe today and enjoy endless mobile entertainment.">
-    <meta name="robots" content="index, follow">
-    <title>Mobile Entertainment</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page with Animated Header</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Mobile Entertainment</h1>
-        <p>Stay connected and entertained with top mobile services tailored to your needs.</p>
+  <main>
+    <!-- Animated Header -->
+    <header id="app-header" class="app-header">
+      <div class="background-container">
+        <div id="background-back" class="background"></div>
+        <div id="background-front" class="background"></div>
+      </div>
+      <div class="header-content">
+        <div id="small-toolbar" class="app-toolbar">
+          <div class="icon-button">
+            <div class="icon">
+              <i class="material-icons">menu</i>
+            </div>
+          </div>
+          <div id="small-title" class="small-title">Some Title</div>
+          <div class="icon-button">
+            <div class="icon">
+              <i class="material-icons">search</i>
+            </div>
+          </div>
+          <div class="icon-button">
+            <div class="icon">
+              <i class="material-icons">more_vert</i>
+            </div>
+          </div>
+        </div>
+        <div id="large-toolbar" class="app-toolbar tall">
+          <div id="large-title" class="large-title">Some Title</div>
+        </div>
+      </div>
     </header>
 
-    <div class="container">
+    <!-- Landing Page Body -->
+    <section id="landing-content">
+      <div class="card">
+        <div class="card-title">Welcome to the Landing Page</div>
+        <p>Your content goes here. Add descriptions, links, or call-to-action buttons.</p>
+      </div>
+    </section>
 
-        <div class="banner-container">
-            <!-- Banner placeholders with full-size images -->
-            <div class="banner">
-                <img src="https://media-content-storage.b-cdn.net/intuner/img/intuner_1.jpg" alt="InTuner">
-                <div class="banner-text">InTuner</div>
-            </div>
-
-            <div class="banner">
-                <img src="https://media-content-storage.b-cdn.net/esv/img/Esv_blp_new.jpg" alt="ESV Live">
-                <div class="banner-text">ESV Live</div>
-            </div>
-
-            <div class="banner">
-                <img src="https://media-content-storage.b-cdn.net/gmz/img/blp.jpg" alt="GameTimez">
-                <div class="banner-text">GameTimez</div>
-            </div>
-
-            <div class="banner">
-                <img src="https://media-content-storage.b-cdn.net/rtst/img/Rtst_blp.jpg" alt="RTST">
-                <div class="banner-text">RTST</div>
-            </div>
-        </div>
-
-        <h2>Why Choose Our Mobile Services?</h2>
-        <p>Our mobile services offer a wide range of options to keep you connected, entertained, and productive on the go.
-            Whether you're looking for affordable data plans, exclusive entertainment packages, or cutting-edge features, we have a solution for you. Choose the service that best fits your lifestyle and enjoy seamless access to entertainment, communication, and more.</p>
-
-        <p>Subscribe to any of our mobile services today and enjoy unlimited access to a world of entertainment, exclusive offers, and much more. No hidden fees, no surprises – just great value!</p>
-
-    </div>
-
-    <footer>
-        <p>© 2024 Mobile Entertainment. All Rights Reserved. <a href="/privacy-policy">Privacy Policy</a></p>
+    <!-- Footer -->
+    <footer id="app-footer">
+      <p>© 2024 Your Company. All Rights Reserved.</p>
     </footer>
+  </main>
 
+  <script src="scripts.js"></script>
 </body>
-
 </html>
