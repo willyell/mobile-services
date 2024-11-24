@@ -35,14 +35,18 @@
             gap: 20px;
         }
 
-        .banner-placeholder {
+        .banner {
             width: 100%;
             height: 300px;
-            background-color: #ddd;
-            background-size: cover;
-            background-position: center center;
             margin: 0;
             border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .banner-text {
@@ -99,17 +103,25 @@
 
         <div class="banner-container">
             <!-- Updated banner placeholders with full-size images -->
-            <div class="banner-placeholder" style="background-image: url('https://media-content-storage.b-cdn.net/intuner/img/intuner_1.jpg');"></div>
-            <div class="banner-text">InTuner</div>
+            <div class="banner">
+                <img src="https://media-content-storage.b-cdn.net/intuner/img/intuner_1.jpg" alt="InTuner">
+                <div class="banner-text">InTuner</div>
+            </div>
 
-            <div class="banner-placeholder" style="background-image: url('https://media-content-storage.b-cdn.net/esv/img/Esv_blp_new.jpg');"></div>
-            <div class="banner-text">ESV Live</div>
+            <div class="banner">
+                <img src="https://media-content-storage.b-cdn.net/esv/img/Esv_blp_new.jpg" alt="ESV Live">
+                <div class="banner-text">ESV Live</div>
+            </div>
 
-            <div class="banner-placeholder" style="background-image: url('https://media-content-storage.b-cdn.net/gmz/img/blp.jpg');"></div>
-            <div class="banner-text">GameTimez</div>
+            <div class="banner">
+                <img src="https://media-content-storage.b-cdn.net/gmz/img/blp.jpg" alt="GameTimez">
+                <div class="banner-text">GameTimez</div>
+            </div>
 
-            <div class="banner-placeholder" style="background-image: url('https://media-content-storage.b-cdn.net/rtst/img/Rtst_blp.jpg');"></div>
-            <div class="banner-text">RTST</div>
+            <div class="banner">
+                <img src="https://media-content-storage.b-cdn.net/rtst/img/Rtst_blp.jpg" alt="RTST">
+                <div class="banner-text">RTST</div>
+            </div>
         </div>
 
         <h2>Why Choose Our Mobile Services?</h2>
