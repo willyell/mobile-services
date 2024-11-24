@@ -98,6 +98,6 @@ footer a:hover {
     
     /* Adjust banner size to fit single column layout */
     .banner {
-        padding-bottom: 100%; /* Maintain the aspect ratio for mobile */
+        padding-bottom: 125%; /* Maintain the aspect ratio for mobile */
     }
 }
