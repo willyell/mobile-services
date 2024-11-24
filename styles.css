@@ -11,18 +11,18 @@ header {
     background-color: #00db00;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 h2 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 40px;
     font-size: 2em;
     color: #00db00;
 }
@@ -31,7 +31,7 @@ p {
     text-align: center;
     font-size: 1.1em;
     line-height: 1.6;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 footer {
@@ -80,11 +80,12 @@ footer a:hover {
     object-fit: contain; /* Ensure the entire image fits */
 }
 
+/* Adjusted Spacing */
 .banner-text {
     text-align: center;
     font-size: 1.2em;
     color: #333;
-    margin-top: 10px;
+    margin-top: 5px; /* Reduce the space between title and banner */
     font-weight: bold;
 }
 
