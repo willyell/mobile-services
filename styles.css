@@ -7,18 +7,12 @@ body {
     color: #333;
 }
 
-/* Header Styling */
 header {
     background-color: #00db00;
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease; /* Smooth shrinking effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition for shrinking */
 }
 
 header h1 {
@@ -33,17 +27,12 @@ header p {
     transition: opacity 0.3s ease;
 }
 
-.shrink header {
-    padding: 10px 20px;
+header.shrink {
+    padding: 10px; /* Adjust padding to shrink the header */
 }
 
-.shrink header h1 {
-    font-size: 1.5rem;
-}
-
-.shrink header p {
-    opacity: 0;
-    visibility: hidden; /* Smoothly hides the <p> element */
+header.shrink p {
+    display: none; /* Hide the paragraph smoothly */
 }
 
 .container {
