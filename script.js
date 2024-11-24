@@ -1,9 +1,13 @@
-// JavaScript to shrink the header on scroll
-document.addEventListener("scroll", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector("header");
-    if (window.scrollY > 50) {
-        header.classList.add("shrink");
-    } else {
-        header.classList.remove("shrink");
-    }
+    const originalHeaderHeight = header.offsetHeight; // Store the original height of the header
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > originalHeaderHeight) {
+            header.classList.add("shrink");
+        } else {
+            header.classList.remove("shrink");
+        }
+    });
 });
+
