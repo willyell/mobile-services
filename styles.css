@@ -45,6 +45,7 @@ header.shrink p {
     margin: 0 auto;
     padding: 20px;
     margin-top: 80px; /* Ensure content is visible below fixed header */
+    margin-bottom: 100px;
 }
 
 h2 {
@@ -54,11 +55,18 @@ h2 {
     color: #00db00;
 }
 
-p {
-    text-align: center;
+/* General paragraph styling for main content */
+.container p {
     font-size: 1.1em;
     line-height: 1.6;
-    margin: 20px 0;
+    margin: 10px 0;
+}
+
+/* Footer-specific paragraph styling */
+footer p {
+    font-size: 0.8em;
+    line-height: 1.2;
+    margin: 0;
 }
 
 footer {
