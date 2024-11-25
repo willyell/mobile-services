@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #00db00;
+    background-color: #460967;
     color: white;
     text-align: center;
     padding: 20px;
@@ -44,7 +44,7 @@ header.shrink p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    padding-top: 80px; /* Ensure content is visible below fixed header */
+    margin-top: 80px; /* Ensure content is visible below fixed header */
 }
 
 h2 {
